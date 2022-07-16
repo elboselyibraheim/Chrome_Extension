@@ -1,12 +1,8 @@
+/* ---------------  Start loadT rack --------------- */
 let audio = document.querySelector(".audio"),
   surahsContainer = document.querySelector(".surahs"),
   ayahAr = document.querySelector(".ayah-ar"),
-  ayahEn = document.querySelector(".ayah-en"),
-  surahName = document.querySelector("surah-name");
-
-/* ---------------  Start loadT rack --------------- */
-
-getData();dfc
+  ayahEn = document.querySelector(".ayah-en");
 function getData() {
   fetch("https://api.quran.sutanlab.id/surah")
     .then((response) => response.json())
@@ -62,3 +58,4 @@ function getData() {
       });
     });
 }
+getData();

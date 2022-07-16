@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Quran channel",
+  "version": "0.1.0",
+  "description": "Quran channel is a Chrome extension that helps you to listen to the Holly Quran in any time you want.",
+  "content_scripts": [
+    {
+      "run_at": "document_start",
+      "matches": ["http://*.quran.com/*"],
+      "js": ["./js/popup.js"],
+      "css": ["./css/style.css"]
+    }
+  ],
+  "browser_action": {
+    "default_title": "Quran channel",
+    "default_icon": "./Photo/Quran_Book.png",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "./Photo/Quran_Book.png",
+    "48": "./Photo/Quran_Book.png",
+    "128": "./Photo/Quran_Book.png"
+  }
+}
